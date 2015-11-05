@@ -10,8 +10,16 @@
 	}
 	.wrap .box1 {
 		position: absolute; left: 450px; top: 20px; width: 80px; height: 800px;/* border: 1px solid #ddd;*/
-		transform: rotate(45deg);
+
+		transform:rotate(45deg);
+		-ms-transform:rotate(45deg); /* IE 9 */
+		-webkit-transform:rotate(45deg); /* Safari and Chrome */
+
 		transition: all 1s;
+		-webkit-transition: all 1s;
+		-moz-transition: all 1s;
+		-ms-transition: all 1s;
+		-o-transition: all 1s;
 
 	}
 	.wrap .box1 .top {display: block; position: absolute;top: 0; left: 0; width: 80px; height: 200px; background: red;}
@@ -23,8 +31,15 @@
 	/*02*/
 	.wrap .box2 {
 		position: absolute; left: 470px; top: 20px; width: 80px; height: 800px;/* border: 1px solid #ddd;*/
-		transform: rotate(-45deg);
+		transform:rotate(-45deg);
+		-ms-transform:rotate(-45deg); /* IE 9 */
+		-webkit-transform:rotate(-45deg); /* Safari and Chrome */
+
 		transition: all 1s;
+		-webkit-transition: all 1s;
+		-moz-transition: all 1s;
+		-ms-transition: all 1s;
+		-o-transition: all 1s;
 
 	}
 	.wrap .box2 .top {display: block; position: absolute;top: 0; left: 0; width: 80px; height: 200px; background: red;}
