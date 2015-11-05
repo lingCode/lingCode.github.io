@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+<style type="text/css">
+	.wrap {
+		position:relative;width:1000px; height: 400px; border: 1px solid #ccc; margin: 50px auto; overflow: hidden;
+		
+	}
+	.wrap .box1 {
+		position: absolute; left: 450px; top: 20px; width: 80px; height: 800px;/* border: 1px solid #ddd;*/
+		transform: rotate(45deg);
+		transition: all 1s;
+
+	}
+	.wrap .box1 .top {display: block; position: absolute;top: 0; left: 0; width: 80px; height: 200px; background: red;}
+	.wrap .box1 .bottom {display: block; position: absolute;bottom: 0; left: 0; width: 80px; height: 200px; background: red;}
+
+	.wrap:hover .box1 {
+		left: 860px; top: -400px;
+	}
+	/*02*/
+	.wrap .box2 {
+		position: absolute; left: 470px; top: 20px; width: 80px; height: 800px;/* border: 1px solid #ddd;*/
+		transform: rotate(-45deg);
+		transition: all 1s;
+
+	}
+	.wrap .box2 .top {display: block; position: absolute;top: 0; left: 0; width: 80px; height: 200px; background: red;}
+	.wrap .box2 .bottom {display: block; position: absolute;bottom: 0; left: 0; width: 80px; height: 200px; background: red;}
+	.wrap:hover .box2 {
+		left: 60px; top: -400px;
+	}
+
+
+
+	.mid {position: absolute; left: 50%; bottom: 50px; margin-left: -150px;
+		text-align: center;
+		line-height: 300px;
+		z-index: 999;
+		width: 300px; height: 300px; border-radius: 50%; border: 1px solid #000;}
+</style>
+</head>
+<body>
+	<div class="wrap">
+		<div class="box1">
+			<span class="top"> </span>
+			<span class="bottom"> </span>
+		</div>
+		<div class="mid">这是中间</div>
+		<div class="box2">
+			<span class="top"> </span>
+			<span class="bottom"> </span>
+		</div>
+	</div>
+</body>
+</html>
