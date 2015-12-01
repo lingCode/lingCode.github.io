@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>幻灯片预览</title>
+	<style>
+		*{ margin:0; padding: 0;}
+		img { border: 0; }
+
+		 .slide {
+		 	position: relative;
+			width: 100%;
+			height: 400px;
+		 	margin:0 auto;
+		 }
+		.slide .mian {
+			width: 100%;
+			height: 400px;
+			overflow: hidden;
+		}
+		.slide .mian .mian-i {
+			 width: 100%;
+			 height: 400px;
+		}
+		.slide .mian .mian-i  img {
+			width: 100%;
+			height: 100%;
+		}
+		.slide .mian .mian-i h2 {
+			position: absolute;
+			left: 15%;
+			top: 10%;
+			font-size: 60px;
+		}
+		
+		.slide .mian .mian-i h3 {
+			position: absolute;
+			left: 15%;
+			top: 30%;
+		}
+
+
+		.slide .clrl {
+			position: absolute;
+			left: 0;
+			bottom: -13px;
+			width: 100%;
+			height: 13px;
+			line-height: 13px;
+			background-color: red;
+			text-align: center;
+		}
+		.slide .clrl .ctrl-i {
+			position: absolute;
+			display: inline-block;
+			width: 150px;
+			height: 13px;
+			background-color: #666;
+		}
+		.slide .clrl .ctrl-i img {
+			width: 100%;
+			position: absolute;
+			left: 0;
+			bottom: 50px;
+		}
+
+		.slide .clrl .ctrl-i:hover {
+			background-color: #f0f0f0;
+		}
+		.slide .clrl .ctrl-i:hover img {
+			bottom: 13px;
+		}
+
+
+
+	</style>
+</head>
+<body>
+
+	<div class="slide">
+		<div class="mian">
+			<div class="mian-i">
+				<div class="caption">
+					<h2>h2 caption</h2>
+					<h3>h3 caption</h3>
+				</div>
+				<img src="images/{{index}}.jpg" alt="">
+			</div>
+		</div>
+		<div class="clrl">
+			<a class="ctrl-i" href="javascript:void(0)">
+				<img src="images/{{index}}.jpg" />
+			</a>
+		</div>
+	</div>
+	
+</body>
+</html>
