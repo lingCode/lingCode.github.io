@@ -1,0 +1,118 @@
+ /*公共样式 */
+blockquote, body, button, dd, dl, dt, fieldset, figure, form, h1, h2, h3, h4, h5, h6, input, legend, li, ol, p, pre, select, td, textarea, th, ul {
+	font-family: Verdana,"Lantinghei SC","Hiragino Sans GB","Microsoft Yahei",Helvetica,arial,\5b8b\4f53,sans-serif;
+}
+
+.width_1000 {
+	width: 1000px;
+	margin: 0 auto;
+}
+a, dd, div, dl, i, img, input, li, p, span, ul {
+	box-sizing: border-box;
+}
+
+/* header start */
+#header {
+	min-height: 70px;
+	padding: 10px 0;
+}
+#header .wrapper {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	margin-top: 7px;
+}
+#header .logo {
+	float: left;
+	display: block;
+	width: 113px;
+	height: 41px;
+	background: url(../images/logo_jk.png) no-repeat;
+	background-size: 100%;
+	text-indent: -9999px;
+}
+#header .search {
+	position: relative;
+	float:left;
+	margin-left: 198px;
+	width: 378px;
+	height: 38px;
+	border: 1px solid #e4e4e4;
+}
+#header .search .key_word {
+	width: 100%;
+	height: 18px;
+	margin: 9px 0;
+	font-size: 12px; 
+	line-height: 18px;
+	color: #a9a9a9;
+	text-indent: 10px;
+	background: #fff;
+}
+#header .search .btn {
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 38px;
+	height: 36px;
+	border-left: 1px solid #e4e4e4;
+	background: #fff url(../images/header_search_btn_bg.png) no-repeat center center;
+	text-indent: -9999px
+}
+#header .search .btn:hover {
+	background: #35b558 url(../images/header_search_btn__hover_bg.png) no-repeat center center;
+}
+#header .search .hot_word {
+	position: absolute;
+	right: 48px;
+	top: 6px;
+}
+#header .search .hot_word a {
+	float:left;
+	background: #f3f3f3;
+	font-size: 12px;
+	color: #8a8a8a;
+	padding: 2px;
+	margin: 2px;
+}
+#header .search .hot_word a:hover {
+	color: #333333;
+	background: #dfdfdf;
+}
+#header .login {
+	float: right;
+	line-height: 50px;
+	font-size: 12px;
+}
+#header .login .massage {
+	float: left;
+	display: inline-block;
+	width: 15px;
+	background: url(../images/massage_bg.gif) no-repeat center center;
+	background-size: 15px 13px; 
+	cursor: pointer;
+}
+#header .login .separator {
+	float: left;
+	padding: 0 10px;
+	color: #333333;
+}
+#header .login a {
+	float: left;
+	color: #333333;
+}
+
+/*loading*/
+#loading {
+	width: 100%;
+	height: 2px;
+	overflow: hidden;
+	background: #f3f3f3;
+}
+#loading .loading-length {
+  width: 0;
+  height: 2px;
+  overflow: hidden;
+  background: #35b558;
+  background: -webkit-gradient(linear,10% 10%,100% 100%,color-stop(0.14,#35b550),color-stop(0.5,#8aca8c),color-stop(1,#2d85ca));
+}
