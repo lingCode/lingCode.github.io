@@ -2,6 +2,7 @@
 
 $(function(){
 
+
 	var $nav_word_a = $("#navigation .nav_box .nav .nav_word > a");
 	var $pop_li = $("#navigation .nav_box .nav .nav_word .popup li");
 	$nav_word_a.each(function(index){
@@ -19,11 +20,11 @@ $(function(){
 
 	//首焦轮播
 	var i = 0;
-	var $imgBox = $('#focus .focus_mid .img_box');
-	var newLi = $('#focus .focus_mid .img_box li').first().clone();
+	var $imgBox = $('#focus .focus_mid .slide .img_box');
+	var newLi = $('#focus .focus_mid .slide .img_box li').first().clone();
 	$imgBox.append(newLi);
 
-	var size = $('#focus .focus_mid .img_box li').size();
+	var size = $('#focus .focus_mid .slide .img_box li').size();
 
 	var $page = $('#focus .focus_mid .slide .nav_box li');
 	$page.hover(function(){
@@ -47,16 +48,18 @@ $(function(){
 	var t=setInterval(function(){
 		i++;
 		move()
-	},2000)
+	},4000)
 
 	var $slide = $('#focus .focus_mid .slide');
-	$imgBox.hover(function(){
+	$slide.hover(function(){
+		$('#focus .focus_mid .slide .btn').show();
 		clearInterval(t);
 	},function(){
+		$('#focus .focus_mid .slide .btn').hide();
 		t=setInterval(function(){
 			i++;
 			move()
-		},2000)
+		},4000)
 	})
 
 	function move(){
@@ -71,7 +74,7 @@ $(function(){
 
 		$imgBox.stop().animate({left:-i*560},500);
 
-		if(i == size){
+		if(i == size-1){
 			$page.eq(0).addClass('on').siblings().removeClass('on');
 		}else{
 			$page.eq(i).addClass('on').siblings().removeClass('on');
