@@ -1,0 +1,147 @@
+/*CSS Document*/
+
+/*
+****reset 重置
+*/
+body,ul,ol,p,h1,h2,h3,h4,h5,h6,dl,dd,form,input,textarea,td,th,button,strong {
+	margin: 0;
+	padding: 0;
+}
+li {
+	list-style: none;
+	vertical-align: top;
+}
+table {
+	border-collapse: collapse;
+}
+img {
+	border: none;
+	vertical-align: middle;
+}
+em {
+	font-style: normal;
+}
+a {
+	text-decoration: none;
+}
+
+/*
+****public
+*/
+body {
+	font-family: "Microsoft Yahei", Arial;
+	overflow-x:hidden;
+	overflow-y: auto;
+}
+.clear {
+	*zoom: 1;
+}
+.clear:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.fl {
+	float: left;
+}
+.fr {
+	float: right;
+}
+
+@media only screen and (min-width: 320px){
+  html {
+    font-size: 62.5% !important;
+  }
+}
+@media only screen and (min-width: 640px){
+  html {
+    font-size: 125% !important;
+  }
+}
+@media only screen and (min-width: 750px){
+  html {
+    font-size: 150% !important;
+  }
+}
+@media only screen and (min-width: 1242px){
+  html {
+    font-size: 187.5% !important;
+  }
+}
+
+header {
+	width: 100%;
+}
+header img {
+	width: 100%;
+}
+
+
+header .mod-bd {
+	width: 100%;
+}
+header .mod-bd li {
+	float: left;
+	width: 25%;
+	text-align: center;
+	margin-top: 1.083rem;
+}
+header .mod-bd li img {
+	display: block;
+	width: 3.75rem;
+	height: 3.75rem;
+	margin: 0 auto;
+}
+header .mod-bd li a p {
+	color: #9b9b9b;
+	line-height: 1.667rem;
+}
+
+.activity {
+	width: 100%;
+}
+.activity .mod-hd {
+	height: 3.333rem;
+	background: #eeeeee url(../images/line.png) no-repeat;
+	background-position: 50% 50%;
+    background-size: 30rem 1px;
+	text-align: center;
+	line-height: 3.333rem;
+}
+.activity .mod-hd .i-hd {
+	display: inline-block;
+	width: 1.667rem;
+	height: 1.167rem;
+	background: url(../images/icon.png) no-repeat;
+	background-size: cover;
+	background-position: 0 0;
+	position: relative;
+	top: 3px;
+}
+.activity .mod-hd span {
+	color: #9b9b9b;
+	margin-left: 4px;
+}
+.activity .mod-bd .item-desc-wrap {
+	width: 16.667rem;
+}
+.activity .mod-bd .item-desc-wrap .item-main-title {
+	color: #b375c0;
+	font-size: 2rem;
+	margin-top: 2rem;
+}
+.activity .mod-bd .item-desc-wrap .item-sub-title-1 {
+	color: #b375c0;
+	font-size: 1.50rem;
+}
+.activity .mod-bd .item-desc-wrap .item-sub-title-2 {
+  display: block;
+  max-height: .36rem;
+  color: #999;
+  font-size: 1rem;
+  line-height: 2rem;
+}
+.activity .mod-bd .item-img-wrap img {
+	width: 10.625rem;
+	height: 8.792rem;
+}
